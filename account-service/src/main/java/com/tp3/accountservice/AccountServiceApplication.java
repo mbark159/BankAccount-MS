@@ -29,7 +29,7 @@ public class AccountServiceApplication {
                 BankAccount bankAccount1=BankAccount.builder()
                         .accountId(UUID.randomUUID().toString())
                         .currency("MAD")
-                        .balance(Math.random()*5000)
+                        .balance(Math.random()*10000)
                         .createAt(LocalDate.now())
                         .customerId(c.getId())
                         .type(AccountType.SAVING_ACCOUNT)
