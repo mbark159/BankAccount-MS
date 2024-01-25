@@ -75,5 +75,5 @@ services:
       - DISCOVERY_SERVICE_URL=http://bank-discovery-service:8761/eureka
       - CONFIG_SERVICE_URL=http://bank-config-service:9999
     depends_on:
-      bank-config-service:
+      bank-account-service:
         condition: service_healthy

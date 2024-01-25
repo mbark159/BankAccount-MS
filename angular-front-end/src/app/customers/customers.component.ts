@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {NgIf} from "@angular/common";
+import {CommonModule, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-customers',
   standalone: true,
   imports: [
-    NgIf, HttpClientModule
+    NgIf, HttpClientModule, CommonModule
   ],
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css'
